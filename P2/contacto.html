@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header - footer.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <title>Document</title>
+
+    <style>
+        nav ul li a {
+            color: var(--azul);
+            font-size: var(--p-font);
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li> <a href="#intro">¿Qué es?</a> </li>
+                <li> <a href="#objetivos">Objetivos</a> </li>
+                <li> <a href="#">Metas</a> </li>
+                <li><a href="p2.html"><img src="img/logo.png" alt="" style="width: 100px;"></a></li>
+                <li> <a href="#">Nosotros</a> </li>
+                <li> <a href="#registro">Registro</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="imgs"></div>
+        <div class="formulario">
+            <div class="inf">
+                <h2>Contactanos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit fugiat laudantium, consequuntur
+                    vero facilis sunt similique vitae atque sint commodi, saepe asperiores vel beatae, tempora placeat
+                    totam! Quia, nesciunt sed!</p>
+            </div>
+                <form action="php/conexion.php" method="post" id="contact_form" runat="server" enctype="multipart/form-data">
+                    <div class="espacios">
+                        <label for="nombre">Nombre:</label> <br>
+                        <input type="text" id="Nombre" name="nombre" maxlength="30" required> <br>
+                    </div>
+                    <div class="espacios">
+                        <label for="organizacion">Organizaci&oacute;n/Empresa</label> <br>
+                        <input type="text" id="Organizacion" name="organizacion" maxlength="60" required> <br>
+                    </div>
+                    <div class="espacios">
+                        <label for="email">Email</label> <br>
+                        <input type="email" id="Email" name="email" maxlength="30" required> <br>
+                    </div>
+                    <div class="espacios">
+                        <label for="asunto">Asunto</label> <br>
+                        <input type="text" id="Asunto" name="asunto" maxlength="60" required> <br>
+                    </div>
+                    <div class="espacios">
+                        <label for="mensaje">Mensaje</label> <br>
+                        <textarea name="mensaje" id="Mensaje" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="esp-btn">
+                        <button class="submit" type="submit">Enviar</button>
+                    </div>
+
+
+                </form>
+        </div>
+        <div class="copysec">
+            <p class="copy">©2023 Webcita para el Desarrollo Sostenible</p>
+        </div>
+    </section>
+
+</body>
+
+</html>

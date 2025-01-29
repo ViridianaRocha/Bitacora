@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/head-foot.css">
+    <link rel="stylesheet" href="css/bit.css">
+    <link rel="stylesheet" href="css/medias-bit.css">
+    <link rel="stylesheet" href="css/medias-svg.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Bitácora 2 - Webcita</title>
+
+    <style>
+        header nav {
+            justify-content: space-evenly;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="ini">
+        <!-- Menu de hamurguesa  -->
+        <input type="checkbox" id="check">
+        <label for="check" class="chbtn">
+            <i class='bx bx-menu bur'></i>
+        </label>
+
+        <h1>Bitácora 2</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#sec1">Flex-box</a>
+            <a href="#sec2">Imágenes</a>
+            <a href="#sec3">SVG</a>
+            <a href="#sec4">Tipografía</a>
+            <a href="#sec5">Reset</a>
+            <a href="#sec6">Normalize</a>
+            <a href="#sec7">Mobile First</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div class="infos">
+                <h2>Flex-box</h2>
+                <p>
+                    La idea principal detrás del diseño flexible es otorgar al contenedor la capacidad de modificar el
+                    ancho, alto y el orden de sus elementos para llenar mejor el espacio disponible (principalmente para
+                    adaptarse a todo tipo de dispositivos de visualización y tamaños de pantalla).
+                    <br>
+                    Un contenedor flexible expande los elementos para llenar el espacio libre disponible o los reduce
+                    para evitar el desbordamiento.
+                    <br>
+                    Display: flex; Esto define un contenedor flexible; en línea o bloque en función del valor dado.
+                    <br>
+                </p>
+                <h4>Propiedades para el padre</h4>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex-wrap</h3>
+                            <i class='bx bx-chevron-down' id="down1" onclick="vermas(1)"></i>
+                        </div>
+                        <div id="txt-1" class="list-box">
+                            <p>Por defecto, todos los elementos intentarán encajar en una línea. Permite que los
+                                elementos se ajusten según sea necesario.
+                            </p>
+                            <ul>
+                                <li>
+                                    Nowrap: Todos los elementos flexibles estarán en una línea.
+                                </li>
+                                <li>
+                                    Wrap: Los elementos flexibles se desplazan de arriba abajo en varias líneas.
+                                </li>
+                                <li>
+                                    Wrap-reverse: Los elementos flexibles se desplazan de abajo hacia arriba.
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/wrap.png" alt="">
+                        </div>
+                        
+                        <i class='bx bx-chevron-up' id="up1" onclick="vermenos(1)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex-flow</h3>
+                            <i class='bx bx-chevron-down' id="down2" onclick="vermas(2)"></i>
+                        </div>
+                        <div id="txt-2" class="list-box">
+                            <p>Esta es una abreviatura de propiedades de flex-direction y flex-wrap, que juntas
+                                definen los ejes principal y transversal del contenedor flexible.
+                                El valor predeterminado es la row nowrap.
+                            </p>
+                            <img class="photo" src="img/flow.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up2" onclick="vermenos(2)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Justify-content</h3>
+                            <i class='bx bx-chevron-down' id="down3" onclick="vermas(3)"></i>
+                        </div>
+                        <div id="txt-3" class="list-box">
+                            <p>Esto define la alineación a lo largo del eje principal.
+                                Ayuda a distribuir el espacio libre adicional que sobra cuando todos los elementos
+                                flexibles
+                                de una línea son inflexibles o flexibles, pero han alcanzado su tamaño máximo.
+                                También ejerce cierto control sobre la alineación de los elementos cuando se desbordan
+                                en la
+                                línea.
+                            </p>
+                            <ul>
+                                <li>
+                                    Flex-start: los ítems se alinean hacia la línea de inicio.
+                                </li>
+                                <li>
+                                    Flex-end: Los ítems se alinean hacia la línea final.
+                                </li>
+                                <li>
+                                    Center: Los ítems están centrados a lo largo de la línea.
+                                </li>
+                                <li>
+                                    Space-between: los elementos se distribuyen uniformemente en la línea; el primer
+                                    elemento está en la línea de inicio, el último elemento en la línea del final.
+                                </li>
+                                <li>
+                                    Space-around: los elementos se distribuyen uniformemente en la línea con el mismo
+                                    espacio a su alrededor.
+                                </li>
+                                <li>
+                                    Space-evenly: los elementos se distribuyen de modo que el espacio entre dos
+                                    elementos (y
+                                    el espacio en los bordes) sea igual.
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/justify_content.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up3" onclick="vermenos(3)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Align-items</h3>
+                            <i class='bx bx-chevron-down' id="down4" onclick="vermas(4)"></i>
+                        </div>
+                        <div id="txt-4" class="list-box">
+                            <p>Esto define el comportamiento predeterminado de como los elementos flexibles se
+                                distribuyen a lo largo del eje transversal en la línea actual.</p>
+                            <ul>
+                                <li>
+                                    Stretch: estirar para llenar el contenedor.
+                                </li>
+                                <li>
+                                    Flex-start: los elementos se colocan en la línea de inicio.
+                                </li>
+                                <li>
+                                    Flex-end: los elementos se colocan en la línea de abajo.
+                                </li>
+                                <li>
+                                    Center: los elementos se centran en el eje transversal.
+                                </li>
+                                <li>
+                                    Baseline: los elementos están alineados, como la alineación de sus líneas base.
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/a-items.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up4" onclick="vermenos(4)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Aling-content</h3>
+                            <i class='bx bx-chevron-down' id="down5" onclick="vermas(5)"></i>
+                        </div>
+                        <div id="txt-5" class="list-box">
+                            <p>Esta propiedad alinea los renglones de un contenedor flexible cuando hay espacio
+                                extra en el eje transversal.</p>
+                            <ul>
+                                <li>
+                                    Flex-start: alineado al inicio del contenedor.
+                                </li>
+                                <li>
+                                    Flex-end: alineado hacia el final del contenedor.
+                                </li>
+                                <li>
+                                    Center: en el centro del contenedor.
+                                </li>
+                                <li>
+                                    Stretch: estirar líneas para ocupar el espacio restante.
+                                </li>
+                                <li>
+                                    Space-between: líneas uniformemente distribuidas; La primera línea esta al comienzo
+                                    del contenedor mientras que la última esta al final.
+                                </li>
+                                <li>
+                                    Space-around: líneas distribuidas uniformemente con el mismo espacio alrededor de
+                                    cada
+                                    línea.
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/a-content.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up5" onclick="vermenos(5)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Gap</h3>
+                            <i class='bx bx-chevron-down' id="down6" onclick="vermas(6)"></i>
+                        </div>
+                        <p id="txt-6">La propiedad gap controla el espacio entre elementos flexibles. Se aplica ese
+                            espacio solo entre elementos que no están en los bordes exteriores.</p>
+                        <i class='bx bx-chevron-up' id="up6" onclick="vermenos(6)"></i>
+                    </div>
+
+                    <h4>Propiedades para los hijos</h4>
+
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Order</h3>
+                            <i class='bx bx-chevron-down' id="down7" onclick="vermas(7)"></i>
+                        </div>
+                        <p id="txt-7">Por default, los elementos flexibles se presentan en el orden de origen.
+                            Sin embargo, la propiedad order controla el orden en el que aparecen en el contenedor
+                            flexible. Por default es 0.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up7" onclick="vermenos(7)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex-grow</h3>
+                            <i class='bx bx-chevron-down' id="down8" onclick="vermas(8)"></i>
+                        </div>
+                        <p id="txt-8">Define la capacidad para que un ítem crezca si es necesario.
+                            Acepta un valor entero que sirve como proporción.
+                            Indica qué cantidad de espacio disponible dentro del contenedor flexible debe ocupar el
+                            ítem. Los números negativos no son válidos.
+                            <br>
+                            En flex-grow: X;
+                            <br>
+                            El numero X indica cuantas unidades de crecimiento crecerá el ítem.
+                            Para saber cuanto crecerá un elemento debemos calcular a cuanto corresponde una unidad de
+                            crecimiento.
+                            La formula para calcular el tamaño de una unidad de crecimiento es la siguiente:
+                            <br>
+                            <span>Unidad de crecimiento = espacio disponible / suma de flex-grow.</span>
+                        </p>
+                        <i class='bx bx-chevron-up' id="up8" onclick="vermenos(8)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex-shrink</h3>
+                            <i class='bx bx-chevron-down' id="down9" onclick="vermas(9)"></i>
+                        </div>
+                        <p id="txt-9">Especifica la capacidad de un elemento para reducir en relación con el resto de
+                            los elementos flexibles del contenedor. Por default en 0.
+                            <br>
+                            Especifica el comportamiento de los ítems cuando el tamaño del contenedor es menor al de los
+                            ítems que lo componen.
+                            <br>
+                            El numero X indica cuantas unidades de reducción reducirá el ítem.
+                            Para saber cuándo se reducirá un elemento debemos calcular a cuanto corresponde una unidad
+                            de reducción.
+                            La fórmula para calcular el tamaño de una unidad de reducción es la siguiente:
+                            <br>
+                            Unidad de reducción = espacio faltante / suma de los flex-shrink.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up9" onclick="vermenos(9)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex- basis</h3>
+                            <i class='bx bx-chevron-down' id="down10" onclick="vermas(10)"></i>
+                        </div>
+                        <div id="txt-10" class="list-box">
+                            <p>Esto define el tamaño predeterminado de un elemento antes de distribuir el
+                                espacio restante. Puede ser una longitud o una palabra clave.</p>
+                            <ul>
+                                <li>
+                                    numero; Una unidad de longitud, o porcentaje, que especifica la longitud inicial de
+                                    los
+                                    elementos flexibles.
+                                </li>
+                                <li>
+                                    auto; Valor predeterminado. La longitud es igual a la longitud del elemento
+                                    flexible. Si
+                                    el ítem no tiene una longitud especificada, la longitud
+                                </li>
+                                <li>
+                                    initial; Establece esta propiedad a su valor predeterminado.
+                                </li>
+                                <li>
+                                    inherit; Hereda esta propiedad de su elemento padre.
+                                </li>
+                                <li>
+                                    Si se establece en 0 el espacio edicional alrededor del contenido no se toma en
+                                    cuenta.
+                                    Si se configura en auto, el espacio adicional se destruye segun su valor de
+                                    felx-grow.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up10" onclick="vermenos(10)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Flex</h3>
+                            <i class='bx bx-chevron-down' id="down11" onclick="vermas(11)"></i>
+                        </div>
+                        <p id="txt-11">Es la abreviatura de flex-grow- flex-shrink y flex-basis combinadas.
+                            El segundo y tercer parámetro son opcionales.
+                            El valor predeterminado es 0 1 auto.</p>
+                        <i class='bx bx-chevron-up' id="up11" onclick="vermenos(11)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Align-self</h3>
+                            <i class='bx bx-chevron-down' id="down12" onclick="vermas(12)"></i>
+                        </div>
+                        <div id="txt-12" class="list-box">
+                            <p>Esto permite que la alineación predeterminada se anule para los elementos flex
+                                específicos.
+                                Tenga en cuenta que las propiedades float, clear y vertical-align no tienen efecto en un
+                                elemento flexible.</p>
+                            <ul>
+                                <li>
+                                    Flex-start: el borde del margen de inicio cruzado del elemento se coloca en la línea
+                                    de
+                                    inicio cruzado.
+                                </li>
+                                <li>
+                                    Flex-end: el borde del borde transversal del elemento se coloca en la línea del
+                                    extremo
+                                    transversal.
+                                </li>
+                                <li>
+                                    Center: el elemento esta centrado en el eje transversal.
+                                </li>
+                                <li>
+                                    Baseline: los elementos están alineados, así como su línea de base esta alineada.
+                                </li>
+                                <li>
+                                    Stretch: estirar para llenar el contenedor.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up12" onclick="vermenos(12)"></i>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div class="infos">
+                <h2>Imágenes responsive</h2>
+                <p>
+                    La especificidad es el medio pro el cual los navegadores deciden que valores de propiedad css son
+                    los más relevantes para un elemento y, por lo tanto, se aplicaran.
+                    Cada selector tiene su lugar en la jerarquía de especificidad. Hay cuatro categorías que definen el
+                    nivel de especificidad de un selector:
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Max-width</h3>
+                            <i class='bx bx-chevron-down' id="down13" onclick="vermas(13)"></i>
+                        </div>
+                        <p id="txt-13">Al 100% la imagen se podrá reducir, pero no se ampliará más del tamaño original.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up13" onclick="vermenos(13)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Imágenes de fondo</h3>
+                            <i class='bx bx-chevron-down' id="down14" onclick="vermas(14)"></i>
+                        </div>
+                        <div id="txt-14" class="list-box">
+                            <p>Las imágenes de fondo también pueden responder al cambio de tamaño. Esto se puede
+                                hacer de tres formas diferentes.</p>
+                            <ul>
+                                <li>
+                                    Estableciendo la propiedad backround-size en “contain” la imagen de fondo se
+                                    escalará e
+                                    intentará ajustarse al área de contenido. Sin embargo, la imagen mantendrá su
+                                    relación
+                                    de
+                                    aspecto.
+                                </li>
+                                <li>
+                                    Backround-size: 100% 100%
+                                    <br>
+                                    La imagen de fondo se ampliará para cubrir toda el área de contenido.
+                                </li>
+                                <li>
+                                    Backround-size: cover: la imagen de fondo se escalará para cubrir toda el área de
+                                    contenido.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up14" onclick="vermenos(14)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Imágenes diferentes</h3>
+                            <i class='bx bx-chevron-down' id="down15" onclick="vermas(15)"></i>
+                        </div>
+                        <p id="txt-15">Una imagen grande puede ser perfecta en una pantalla de computadora grande. Para
+                            reducir la carga o por cualquier otra razón, se pueden usar media queries para mostrar
+                            diferentes imágenes en diferentes dispositivos.</p>
+                        <i class='bx bx-chevron-up' id="up15" onclick="vermenos(15)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Elemento Picture</h3>
+                            <i class='bx bx-chevron-down' id="down16" onclick="vermas(16)"></i>
+                        </div>
+                        <p id="txt-16">Se pueden configurar diferentes fuentes, y la primera fuente que se ajusta a las
+                            preferencias es la que se está utilizando.</p>
+                        <i class='bx bx-chevron-up' id="up16" onclick="vermenos(16)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="infos">
+                <h2>SVG</h2>
+                <p>
+                    SVG es un lenguaje de marcado para describir imágenes y aplicaciones de gráficos bidimensionales, y
+                    un conjunto de interfaces de scripts de gráficos relacionados.
+                    <br>
+                    Es un formato de gráficos libre de derechos de uso generalizado desarrollado y mantenido por el W3C
+                    SVG Working Group.
+                    <br>
+                    Los archivos SVG son gráficos vectoriales bidimensionales, tanto estáticos como animados en formato
+                    XML. Se puede utilizar con imágenes como formas, trazados, texto y efectos de filtro.
+                </p>
+                <h4>Ventajas</h4>
+                <div class="ventajas">
+                    <div class="ven">
+                        <h3>Crear y editar cualquier editor de texto</h3>
+                        <h3>Imprimir con alta calidad en cualquier resolución </h3>
+                        <h3>Soporte del navegador</h3> 
+                    </div>
+                    <img class="photo-svg" src="img/Fresas.svg" alt="">
+                    <div class="ven">
+                        <h3>Las imágenes SVG son escalables</h3>
+                        <h3>SVG es un estándar abierto</h3>
+                        <h3>Los gráficos SVG NO pierden calidad si amplían o cambian de tamaño</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec4">
+            <div class="infos">
+                <h2>Tipografía</h2>
+                <p>
+                    El texto es parte imprescindible de la web. Productos, servicios, lo que haces, los que quiere
+                    lograr con el proyecto web se muestran mediante el texto.
+                    <br>
+                    Junto con el color, la tipografía puede alterar por completo el significado que asociamos a un
+                    proyecto. El texto puede decir una cosa; pero las letras, otra muy diferente.
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Legibilidad</h3>
+                            <i class='bx bx-chevron-down' id="down17" onclick="vermas(17)"></i>
+                        </div>
+                        <p id="txt-17">Básicamente es la facilidad con que se puede leer y comprender un texto.</p>
+                        <i class='bx bx-chevron-up' id="up17" onclick="vermenos(17)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Tamaño de la letra</h3>
+                            <i class='bx bx-chevron-down' id="down18" onclick="vermas(18)"></i>
+                        </div>
+                        <div id="txt-18" class="list-box">
+                            <p>Estudios concluyen que es un error costoso si el texto es menor a 16px.
+                                <br>
+                                16px no es un tamaño grande, es el tamaño por defecto en muchos navegadores. 16px o 18px
+                                deben ser las primeras medidas a probar.
+                            </p>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up18" onclick="vermenos(18)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Palabras por línea</h3>
+                            <i class='bx bx-chevron-down' id="down19" onclick="vermas(19)"></i>
+                        </div>
+                        <div id="txt-19" class="list-box">
+                            <p>Según John Kane en su Manual de tipografia, el ancho de línea optimo contiene entre 35 y
+                                65 caracteres (7-12 palabras aproximadamente).
+                                <br>
+                                Aunque estas indicaciones fueron sugeridas para papel en un principio sirven también
+                                para tener una legibilidad optima en pantalla.
+                            </p>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up19" onclick="vermenos(19)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Combinación tipográfica</h3>
+                            <i class='bx bx-chevron-down' id="down20" onclick="vermas(20)"></i>
+                        </div>
+                        <p id="txt-20">Usar diferentes familias tipográficas te permitirá separar e identificar mejores
+                            bloques de texto, establecer jerarquías claras, mejorar la legibilidad de los textos y, en
+                            definitiva, hacer que el usuario se quede mas tiempo en la web.
+                            <br>
+                            Cada proyecto tiene sus propias necesidades, pero como casi siempre, menos, es más. No es
+                            necesario utilizar mas de dos familias tipográficas, cuando hablamos de web, debemos
+                            limitarnos a dos.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up20" onclick="vermenos(20)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Interlineado</h3>
+                            <i class='bx bx-chevron-down' id="down21" onclick="vermas(21)"></i>
+                        </div>
+                        <p id="txt-21">La recomendación es establecer el line-heigth al 120% (multiplicar por 1.2) el
+                            tamaño del texto.
+                            <br>
+                            Si nos pasamos de interlineado será muy difícil crear continuidad, el lector tendrá que
+                            hacer un esfuerzo extra para ir de una línea a la siguiente y podrá perderse.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up21" onclick="vermenos(21)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Color</h3>
+                            <i class='bx bx-chevron-down' id="down22" onclick="vermas(22)"></i>
+                        </div>
+                        <p id="txt-22">No existe una regla general para la combinación de colores, eso va a depender
+                            mucho del proyecto que se esté realizando.
+                            <br>
+                            El w3c sugiere que se use el contraste adecuado o los colores que hagan que se distinga el
+                            texto del fondo. Es importante verificar el contraste antes de aplicarlo al diseño.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up22" onclick="vermenos(22)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Unidades rem</h3>
+                            <i class='bx bx-chevron-down' id="down23" onclick="vermas(23)"></i>
+                        </div>
+                        <p id="txt-23">
+                            El uso de pixeles y ems es algo habitual. Mientras que los px son unidades absolutas, los
+                            ems son unidades relativas al elemento padre.
+                            Esto significa que cuando cambia el tamaño del navegador, es difícil calcular el tamaño para
+                            lograr el resultado deseado.
+                            Es mejor opción usar rems. Los rems, también conocidos como “root em”, son siempre iguales
+                            al tamaño de fuente del elemento HTML raíz, además todos los navegadores modernos lo
+                            admiten.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up23" onclick="vermenos(23)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec5">
+            <div class="infos">
+                <h2>Reset</h2>
+                <p>
+                    Los reset CSS son unas hojas de estilo en cascada que se suelen incluir en un documento HTML, para
+                    minimizar las diferencias visuales que se dan al mostrar una misma pagina web, en diferentes
+                    navegadores.
+                    Esto porque cada navegador implementara su hoja de estilos propias e interna, con determinados
+                    valores por defecto, que no siempre según la recomendación de la organización W3C.
+                    <br>
+                    El reset CSS eliminara gran parte del preformateo del navegador.
+                    Hay varios Reset que se pueden utilizar:
+                </p>
+                <ul>
+                    <li>El reset de Tantek.</li>
+                    <li>El reset de Tripoli.</li>
+                    <li>El reset de Erik Mayer.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sec6">
+            <div class="infos">
+                <h2>Normalize</h2>
+                <p>
+                    Normalize es un archivo CSS cuyo objetivo es mantener los estilos similares en los navegadores,
+                    porque cada navegador agrega sus propios estilos por defecto.
+                    <br>
+                    Normalize CSS regulariza estos estilos y hace que el proyecto se vea igual independientemente del
+                    navegador donde se visualice. Además, está preparado para adaptarse completamente a HTML5.
+                    <br>
+                    A diferencia de algunos CSS reset “normalize” preserva los valores por defecto de los navegadores.
+                    Además, también corrige errores e inconsistencias de los navegadores.
+            </div>
+        </section>
+
+        <section id="sec7">
+            <div class="infos">
+                <h2>Mobile First</h2>
+                <p>
+                    Estar conectado en internet se volvió parte de nuestro día a día. Poco a poco estamos dejando de
+                    usar la computadora para realizar las tareas cotidianas y estamos usando cada vez más los
+                    smartphones.
+                    <br>
+                    Si las personas pasan mas tiempo navegando en internet por medio del teléfono móvil; los mas sensato
+                    seria crear primero un sitio web optimizado para los dispositivos móviles.
+                    <br>
+                    Pensando en esto Luke Wroblewski (director de productos de Google) en 2011, desarrollo el concepto
+                    Mobile First, cuando publico el libro Mobile First.
+                    Su propuesta era crear un sitio web pensado primero para dispositivos móviles y después ajustarlo
+                    para la computadora.
+                    <br>
+                    Para aplicar este método, debemos tener en cuenta que todo lo que no sea esencial debe quedar fuera
+                    del diseño.
+                    <br>
+                    Cuando la etapa de diseño para un dispositivo de tamaño reducido está lista, el siguiente paso es
+                    estirar la ventana hasta que el diseño empiece a deformarse o a verse mal.
+                    En este momento se deben definir la media queries para pantallas de mayor dimensión.
+
+                </p>
+        </section>
+    </main>
+</body>
+
+<script>
+    function vermas(numP) {
+
+        var masTexto = document.getElementById("txt-" + numP);
+        var menos = document.getElementById("up" + numP);
+        var mas = document.getElementById("down" + numP);
+
+        masTexto.style.display = "block";
+        menos.style.display = "block";
+        mas.style.display = "none";
+    }
+
+    function vermenos(numP) {
+
+        var menosTexto = document.getElementById("txt-" + numP);
+        var more = document.getElementById("down" + numP);
+        var less = document.getElementById("up" + numP);
+
+        menosTexto.style.display = "none";
+        less.style.display = "none";
+        more.style.display = "block";
+    }
+</script>
+
+</html>

@@ -1,0 +1,153 @@
+/*Informacion Introduccion*/
+
+.intro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.intro .sec1 {
+  width: 80%;
+  margin: 25vh 0;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.intro .sec1 .txt {
+  width: 55%;
+}
+
+.intro .sec1 .imgs-13 {
+  width: 30%;
+  position: relative;
+}
+
+.intro .sec1 .imgs-13 .img1 {
+  width: 70%;
+  position: absolute;
+  right: 0;
+}
+
+.intro .sec1 .imgs-13 .img2 {
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+/*Metas*/
+
+.metas {
+  width: 100%;
+  padding: 100px 0;
+  background-color: var(--gris);
+  display: flex;
+  justify-content: center;
+}
+
+.metas .sec2 {
+  width: 80%;
+}
+
+.metas h2 {
+  text-align: center;
+  color: var(--azul);
+}
+
+.metas .circles {
+  width: 100%;
+  padding: 60px 0;
+  display: inline-flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.metas .circles a {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  background-color: var(--azul);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+  transition: 0.5s;
+  margin-bottom: 50px;
+}
+
+.metas .circles a:hover {
+  transform: translateY(-20px);
+}
+
+
+.metas .modal {
+  background-color: rgba(0, 0, 0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+
+.metas .modal .ventana {
+  background-color: #f9f9f9;
+  width: 60%;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.metas .modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.metas .modal .ventana a i {
+  font-size: 2rem;
+  color: rgb(41, 41, 41);
+  position: absolute;
+}
+
+.metas .modal .ventana h3 {
+  color: var(--azul);
+
+  text-align: center;
+}
+
+.metas .modal .ventana p {
+  padding: 10px 50px;
+
+}
+
+/*Flechas*/
+
+.ir{
+  width: 100%;
+  margin: 50px 0;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.ir .go{
+  width: 20%;
+  height: 6vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #727272;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.ir .go:hover{
+  color: white;
+}
+.ir i{
+  font-size: 2rem;
+}

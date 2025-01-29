@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #F4F2EF;
+}
+
+/*-----HEADER-----*/
+header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*----- Menu de hamburguesa -----*/
+
+header .chbtn {
+    display: none;
+}
+
+header #check {
+    display: none;
+}
+
+/*--------------------------------*/
+
+header h1 {
+    font-size: 4rem;
+    color: #CD4662;
+    text-align: center;
+    font-weight: bold;
+}
+
+header nav {
+    width: 38%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #CD4662;
+    transition: .5s;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+header nav a:hover {
+    background-color: #F4DBDB;
+}
+
+*::selection {
+    background: #b8c79a;
+    color: #ffffff;
+  }

@@ -1,0 +1,606 @@
+@media screen and (max-width: 1200px) {
+    header nav {
+        width: 80%;
+        height: 80px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    header nav ul li a img {
+        width: 80px;
+
+    }
+
+    header .titulo1 {
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    header .titulo1 h1 {
+        font-size: 2.3rem;
+    }
+
+    main #intro .sec1 {
+        width: 80%;
+    }
+
+    main #intro .sec1 .stit h2 {
+        font-size: 2.1rem;
+    }
+
+    main #intro .sec1 .txt {
+        width: 70%;
+    }
+
+    /*------- Cards -------*/
+
+    main .sec3 {
+        width: 80%;
+    }
+
+    main .sec3 h3 {
+        font-size: 1.8rem;
+    }
+
+    main .sec3 .dis-img a img {
+        border-radius: 20px;
+    }
+
+    /*------- Formulario -------*/
+
+    main .sec4 {
+        background-color: #dbdbdb;
+        width: 95%;
+        height: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main .sec4 h4 {
+        font-size: 1.5rem;
+        width: 40%;
+    }
+
+    main .sec4 form {
+        width: 70%;
+    }
+
+    main .sec4 input {
+        height: 40px;
+    }
+
+    main .sec4 input::placeholder {
+        font-size: 1rem;
+    }
+
+    main .sec4 button {
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /*-- Footer --*/
+    footer {
+        padding: 80px 0 50px 0;
+    }
+
+    footer .cosas .social a i {
+        font-size: 1.8rem;
+    }
+
+    footer .foot-menu {
+        justify-content: space-between;
+    }
+
+    footer .foot-menu ul {
+        width: 20%;
+    }
+
+    .copysec {
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    header .titulo1 {
+        width: 85%;
+        height: 10vw;
+        bottom: -5vw;
+    }
+
+    header .titulo1 h1 {
+        font-size: 2rem;
+    }
+
+    main #intro .sec1{
+        width: 80%;
+        height: 600px;
+    }
+
+    main #intro .sec1 .stit h2 {
+        font-size: 1.8rem;
+    }
+
+    main #intro .sec1 .txt {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header .back{
+        margin-top: 80px;
+    }
+
+    header .nav-movil {
+        background-color: #f7f7f7eb;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 4%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    header .chbtn {
+        display: block;
+    }
+
+    header .nav-movil a {
+        display: block;
+        width: 40%;
+    }
+
+    header .nav-movil a img {
+        width: 100%;
+    }
+
+    #ex {
+        display: none;
+        color: #009EDB;
+        font-size: 4rem;
+    }
+
+    #bur {
+        color: #009EDB;
+        font-size: 4rem;
+    }
+
+    header nav {
+        width: 70%;
+        height: 100%;
+        margin: 0;
+        padding: 10% 10%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        overflow: auto;
+        background-color: #009EDB;
+        transition: all .5s;
+        z-index: 1;
+        display: block;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+    }
+
+    header nav ul li {
+        margin-bottom: 30px;
+    }
+
+    header nav ul li a {
+        font-size: 1.8rem;
+        color: #ffffff;
+    }
+
+    header nav ul .img-logo {
+        display: none;
+    }
+
+    header nav a:hover {
+        color: #0d79a4;
+    }
+
+    header nav ul .submenu {
+        width: 90%;
+        position: static;
+        z-index: 0;
+        background-color: #0d79a4;
+        height: auto;
+        border-radius: 0 30px 30px 30px;
+        padding: 5px;
+    }
+
+    header nav ul .submenu li a {
+        margin: 20px 20px;
+        color: #ffffff;
+    }
+
+    header nav ul .submenu li a:hover {
+        color: #fff;
+    }
+
+    header .titulo1 {
+        border-radius: 10px;
+    }
+
+    main #intro {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #intro .sec1 {
+        width: 85%;
+        height: auto;
+        padding: 12vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #intro .sec1 .stit {
+        width: 60%;
+    }
+
+    main #intro .sec1 .stit h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    main #intro .sec1 .txt {
+        width: 100%;
+        margin-top: 4vw;
+    }
+
+    /*------- Banner -------*/
+
+    main .sec2 :nth-child(1) {
+        display: none;
+    }
+
+    main .sec2 :nth-child(2) {
+        display: block;
+    }
+
+    /*------- Cards -------*/
+
+    main .sec3 {
+        width: 85%;
+        margin: 8vw auto;
+    }
+
+    main .sec3 h3 {
+        font-size: 1.8rem;
+    }
+
+    main .sec3 .dis-img {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .sec3 .dis-img a {
+        width: 60%;
+        margin-top: 4vw;
+    }
+
+    main .sec3 .dis-img a img {
+        border-radius: 10px;
+    }
+
+    /*------- Formulario -------*/
+
+    main .sec4 {
+        width: 100%;
+        height: 350px;
+    }
+
+    main .sec4 h4 {
+        font-size: 1.5rem;
+        width: 70%;
+    }
+
+    main .sec4 form {
+        width: 80%;
+        margin: 30px 0;
+    }
+
+    main .sec4 input {
+        height: 40px;
+    }
+
+    main .sec4 input::placeholder {
+        color: #8e9eb3eb;
+        font-size: 1rem;
+    }
+
+    main .sec4 button {
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    /*-- Footer --*/
+    footer {
+        padding: 100px 0 50px 0;
+    }
+
+    footer .cosas>a {
+        width: 70%;
+    }
+
+    footer .cosas .social {
+        width: 70%;
+    }
+
+    footer .cosas .social a i {
+        font-size: 1.8rem;
+    }
+
+    footer .foot-menu {
+        width: 70%;
+        justify-content: space-evenly;
+    }
+
+    footer .foot-menu ul {
+        width: 25%;
+    }
+
+    footer .foot-menu .foot-contacto {
+        display: none;
+    }
+
+    .copysec {
+        height: 30px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 640px){
+    main #intro .sec1 .stit {
+        width: 80%;
+    }
+
+    header .titulo1 {
+        height: 20vw;
+        bottom: -10vw;
+    }
+
+    header .titulo1 h1 {
+        font-size: 2.1rem;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    header .back{
+        margin-top: 0;
+    }
+
+    header .port-pc {
+        display: none;
+    }
+
+    header .port-movil {
+        display: block;
+    }
+
+    header .back {
+        margin-top: 60px;
+    }
+
+    header .nav-movil {
+        height: 60px;
+        background-color: #fff;
+    }
+
+    header .nav-movil a {
+        width: 50%;
+    }
+
+    #ex {
+        font-size: 3rem;
+    }
+
+    #bur {
+        font-size: 3rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header nav ul .submenu {
+        width: 100%;
+    }
+
+    header .titulo1 {
+        width: 90%;
+        height: 20vw;
+        position: relative;
+        top: -10vw;
+        bottom: 0;
+    }
+
+    header .titulo1 h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    main #intro {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #intro .sec1 {
+        width: 80%;
+        height: auto;
+        padding: 8vw 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main #intro .sec1 .stit {
+        width: 90%;
+    }
+
+    main #intro .sec1 .stit h2 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    main #intro .sec1 .txt {
+        margin-top: 6vw;
+    }
+
+    main section p span {
+        display: none;
+    }
+
+    main section p a {
+        display: inline;
+        color: #009EDB;
+        text-decoration: none;
+    }
+
+    /*------- Cards -------*/
+
+    main .sec3 {
+        width: 80%;
+        margin: 8vw auto;
+    }
+
+    main .sec3 h3 {
+        font-size: 1.8rem;
+    }
+
+    main .sec3 .dis-img {
+        display: none;
+    }
+
+    main .sec3 .dis-img-movil {
+        display: block;
+    }
+
+    main .sec3 .dis-img-movil a {
+        width: 100%;
+        display: block;
+        margin-top: 4vw;
+    }
+
+    main .sec3 .dis-img-movil a img {
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    /*-- Footer --*/
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 0px;
+    }
+
+    footer .cosas {
+        width: 70%;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+    }
+
+    footer .cosas>a {
+        width: 50%;
+    }
+
+    footer .cosas .social {
+        width: 40%;
+        margin-top: 0;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .cosas .social a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    footer .cosas .social a i {
+        font-size: 3.4rem;
+    }
+
+    footer .foot-menu {
+        width: 70%;
+        justify-content: space-between;
+    }
+
+    footer .foot-menu ul {
+        width: auto;
+        margin-top: 30px;
+    }
+
+    footer .foot-menu ul li {
+        margin: 0;
+    }
+
+    footer .foot-menu ul li h5 {
+        margin-bottom: 0;
+    }
+
+    footer .foot-menu ul a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main #intro .sec1 .stit {
+        width: 90%;
+    }
+    main #intro .sec1 .stit h2{
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 450px){
+    main #intro .sec1 .stit {
+        width: 100%;
+    }
+
+    main .sec4 h4{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 390px){
+    header .titulo1 {
+        height: 30vw;
+        bottom: -15vw;
+    }
+
+    footer .cosas>a {
+        width: 45%;
+    }
+
+    footer .cosas .social {
+        width: 50%;
+    }
+
+    footer .cosas .social a i {
+        font-size: 3rem;
+    }
+}

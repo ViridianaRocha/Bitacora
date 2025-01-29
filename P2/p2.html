@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/ind-p2.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/media-p2.css">
+    <title>Webcita - ODS</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="nav-movil">
+            <a href="p2.html"><img src="img/logot-movil.png" alt=""></a>
+            <i class='bx bx-menu' id="bur" onclick="despliegue()"></i>
+            <i class='bx bx-x' id="ex" onclick="guardar()"></i>
+        </div>
+
+        <nav id="burger">
+            <ul>
+                <li> <a href="#intro">¿Qué es?</a> </li>
+                <li> <a href="#objetivos">Objetivos</a> </li>
+                <li> <a href="#">Metas</a>
+                    <ul class="submenu">
+                        <li>
+                            <a href="ods-13.html">Acción por el clima</a>
+                            <a href="ods-14.html">Vida submarina</a>
+                            <a href="ods-15.html">Vida de ecosistemas terrestres</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="img-logo"><a href="p2.html"><img src="img/logo.png" alt=""></a></li>
+                <li> <a href="prueba.html">Nosotros</a> </li>
+                <li> <a href="#registro">Registro</a> </li>
+                <li> <a href="contacto.html">Contacto</a> </li>
+            </ul>
+        </nav>
+        <div class="back port-pc">
+            <img src="img/portada-new.jpg" alt="">
+        </div>
+        <div class="back port-movil">
+            <img src="img/portada-movil.jpg" alt="">
+        </div>
+
+        <div class="titulo1">
+            <h1>Agenda 2030 para la naturaleza</h1>
+        </div>
+    </header>
+    <main>
+        <section id="intro">
+            <div class="sec1">
+                <div class="stit">
+                    <h2>¿Qué son los Objetivos del Desarrollo Sostenible?</h2>
+                </div>
+                <div class="txt">
+                    <p>Los Objetivos de Desarrollo Sostenible (ODS), también conocidos como Objetivos Globales, fueron
+                        adoptados por las Naciones Unidas en 2015 como un llamado universal a la acción para acabar con
+                        la
+                        pobreza, proteger el planeta y garantizar que para 2030 todas las personas disfruten de paz y
+                        prosperidad. <a id="Ma-txt1" onclick="VerMas(1)">Ver más...</a>
+                        <br>
+                        <span id="Mas1">
+                        Los 17 ODS están integrados: reconocen que la acción en un área afectará los resultados en
+                        otras, y
+                        que el desarrollo debe equilibrar la sostenibilidad social, económica y ambiental.
+                        <br>
+                        Los países se han comprometido a priorizar el progreso de aquellos que están más rezagados. Los
+                        ODS
+                        están diseñados para acabar con la pobreza, el hambre, el SIDA y la discriminación contra las
+                        mujeres y las niñas.
+                        <br>
+                        La creatividad, el saber hacer, la tecnología y los recursos financieros de toda la sociedad son
+                        necesarios para alcanzar los ODS en todos los contextos. <a onclick="VerMenos(1)">Ver menos...</a>
+                    </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec2">
+            <img src="img/banner.jpg" alt="">
+            <img src="img/banner-movil.jpg" alt="">
+        </section>
+
+        <section id="objetivos" class="sec3">
+            <h3>Objetivos orientados a la naturaleza</h3>
+            <p>Los ODS 13, 14 y 15 están directamente relacionados porque engloban la lucha contra el cambio climático.
+                Éste impacta negativamente en la economía y a todos los seres vivos. <a id="Ma-txt2" onclick="VerMas(2)">Ver más...</a>
+                <br>
+                <span id="Mas2">
+                El ODS 13 controla los cambios en los patrones del clima, el aumento del nivel del mar y los fenómenos
+                meteorológicos extremos.
+                <br>
+                El ODS 14 consiste en conservar y utilizar en forma sostenible los océanos, los mares y los recursos
+                marinos para el desarrollo sostenible. La vida de cientos de especies depende de ello.
+                <br>
+                El ODS 15 busca gestionar sosteniblemente los bosques, luchar contra la desertificación, detener e
+                invertir la degradación de las tierras y detener la pérdida de la biodiversidad. <a onclick="VerMenos(2)">Ver menos...</a>
+            </span>
+            </p>
+            <div class="dis-img">
+                <a href="ods-13.html"><img src="img/13.jpg" alt=""></a>
+                <a href="ods-14.html"><img src="img/14.jpg" alt=""></a>
+                <a href="ods-15.html"><img src="img/15.jpg" alt=""></a>
+            </div>
+            <div class="dis-img-movil">
+                <a href="ods-13.html"><img src="img/13-movil.png" alt=""></a>
+                <a href="ods-14.html"><img src="img/14-movil.png" alt=""></a>
+                <a href="ods-15.html"><img src="img/15-movil.png" alt=""></a>
+            </div>
+        </section>
+
+        <section id="registro" class="sec4" class="cont-form">
+            <h4>Registrate para recibir notcias y mantenerte actualizado/a</h4>
+
+            <form method="post" action="php/registro.php" id="contact_form">
+
+                <input type="email" name="email" placeholder="Correo electronico">
+                <button class="boton" type="submit" name="enviar"> Enviar </button>
+
+            </form>
+
+            <p>Para mas información contactanos aquí</p>
+            <a href="contacto.html">Contactanos</a>
+
+        </section>
+    </main>
+    <footer>
+        <div class="cosas">
+            <a href="p2.html"><img src="img/logo.png" alt=""></a>
+            <div class="social">
+                <a href="https://www.facebook.com/Agenda2030MX" target="_blank"><i
+                        class='bx bxl-facebook-square'></i></a>
+                <a href="https://www.instagram.com/agenda2030mx/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.youtube.com/@AgendaMx-dz7xg" target="_blank"><i class='bx bxl-youtube'></i></a>
+                <a href="https://twitter.com/SecAgenda2030Mx" target="_blank"><i class='bx bxl-twitter'></i></a>
+            </div>
+        </div>
+        <div class="foot-menu">
+            <ul>
+                <li>
+                    <h5>Politicas</h5>
+                </li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="#">Políticas de seguridad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <h5>Nosotros</h5>
+                </li>
+                <li><a href="#">Quienes somos</a></li>
+                <li><a href="#">Equipo</a></li>
+                <li><a href="#">Código de ética</a></li>
+                <li><a href="#">Fondos</a></li>
+
+            </ul>
+            <ul class="foot-contacto">
+                <li>
+                    <h5>Contacto</h5>
+                </li>
+                <li><a href="#registro">Registrate</a></li>
+                <li><a href="contacto.html">Contactanos</a></li>
+
+            </ul>
+            <ul>
+                <li>
+                    <h5>Temas</h5>
+                </li>
+                <li><a href="p2.html">Objetivos de desarrollo sostenible</a></li>
+                <li><a href="ods-13.html">ODS - 13</a></li>
+                <li><a href="ods-14.html">ODS - 14</a></li>
+                <li><a href="ods-15.html">ODS - 15</a></li>
+            </ul>
+        </div>
+
+    </footer>
+    <div class="copysec">
+        <p>©2023 <a href="../index.html">Webcita</a> para el Desarrollo Sostenible</p>
+    </div>
+</body>
+
+<script>
+    function despliegue() {
+        var cambio = document.getElementById("burger");
+        var ecs = document.getElementById("ex");
+        var bru = document.getElementById("bur");
+
+        cambio.style.left = "0";
+        ecs.style.display = "block";
+        bru.style.display = "none";
+    }
+
+    function guardar() {
+        var cambio = document.getElementById("burger");
+        var ecs = document.getElementById("ex");
+        var bru = document.getElementById("bur");
+
+        cambio.style.left = "-100%";
+        ecs.style.display = "none";
+        bru.style.display = "block";
+    }
+
+    function VerMas(num){
+        var mas = document.getElementById("Mas"+num);
+         mas.style.display = "block";
+        var hide = document.getElementById("Ma-txt"+num);
+         hide.style.display = "none";
+    }
+
+    function VerMenos(num){
+        var menos = document.getElementById("Mas"+num);
+         menos.style.display = "none";
+        var show = document.getElementById("Ma-txt"+num);
+         show.style.display = "inline";
+    }
+</script>
+
+</html>

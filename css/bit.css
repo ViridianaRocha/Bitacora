@@ -1,0 +1,167 @@
+/*
+    #F4F2EF
+    #CD4662
+    #AEC289
+    #F4DBDB
+*/
+
+header {
+    height: 300px;
+}
+
+header nav {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+main section .infos {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section .photo {
+    width: 100%;
+    height: auto;
+    background-color: #AEC289;
+    border-radius: 1.5vw;
+}
+
+main section .infos h2 {
+    font-size: 2rem;
+    color: #AEC289;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+main section .infos h3 {
+    font-size: 1.1rem;
+    width: 85%;
+    color: #CD4662;
+    font-weight: bold;
+}
+
+main section .infos h4 {
+    font-size: 1.2rem;
+    width: 85%;
+    color: #AEC289;
+    font-weight: 600;
+}
+
+main section .infos p {
+    font-size: 1.1rem;
+    width: 100%;
+    color: rgb(32, 32, 32);
+    line-height: 20px;
+}
+
+main section .infos>p {
+    margin: 15px 0;
+}
+
+main section .infos ul{
+    list-style: none;
+}
+
+main section .infos > ul{
+    margin-left: 4%;
+}
+
+main section .infos ul li{
+    font-size: 1.1rem;
+    color: rgb(32, 32, 32);
+    margin-bottom: 6px;
+}
+main section .infos ul li::before{
+    content: "• ";
+    color: #AEC289;
+}
+
+main section .infos div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main section .infos .puntos {
+    width: 100%;
+    justify-content: center;
+}
+
+main section .infos .puntos h3 {
+    background-color: #F4DBDB;
+    width: auto;
+    margin: 15px;
+    border-radius: 10px;
+    align-items: center;
+    padding: 8px;
+}
+
+main section .infos div .inf-box {
+    background-color: #F4DBDB;
+    width: 45%;
+    margin: 15px 15px 15px 0;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+main section .infos div .ultimo {    
+    width: 100%;
+}
+
+main section .infos div .inf-box .sub-icon {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+/*main section .infos div .inf-box .txt-icon{
+    background-color: rgb(204, 106, 41);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}*/
+
+/*------------ DESPLEGABLES -------------*/
+
+main section .infos div .inf-box i {
+    color: #CD4662;
+    font-size: 1.5rem;
+}
+
+main section .infos div .inf-box > p {
+    display: none;
+    padding: 10px;
+    transition: .5s;
+}
+
+main section .infos div .inf-box .list-box {
+    padding: 10px;
+    display: none;
+}
+
+main section .infos div .inf-box .bx-chevron-up {
+    display: none;
+    
+}

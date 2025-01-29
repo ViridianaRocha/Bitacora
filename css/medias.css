@@ -1,0 +1,166 @@
+/*----------1024----------*/
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        width: 65%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /*-----CONTENIDO-----*/
+
+    section {
+        height: auto;
+        padding: 4vw 0;
+        position: static;
+        justify-content: space-evenly;
+    }
+
+    #sc1 {
+        border-radius: 25vw;
+    }
+
+    #sc2 {
+        border-radius: 25vw;
+    }
+
+    #sc3 {
+        border-radius: 25vw;
+    }
+
+    section .img {
+        overflow: hidden;
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #sc1 .img {
+        border-radius: 20vw;
+    }
+
+    #sc2 .img {
+        border-radius: 20vw;
+    }
+
+    #sc3 .img {
+        border-radius: 20vw;
+    }
+
+    section .img a :nth-child(1){
+        display: none;
+    }
+
+    section .img a :nth-child(2){
+        display: block;
+    }
+
+    section .caja {
+        width: 40%;
+    }
+
+    section .caja .info {
+        width: 90%;
+
+    }
+}
+
+/*----------720----------*/
+
+@media screen and (max-width: 720px) {
+
+    /*-----CONTENIDO-----*/
+
+    section {
+        width: 60vw;
+        height: auto;
+        flex-direction: column;
+    }
+
+    #sc1 {
+        border-radius: 30vw;
+    }
+
+    #sc2 {
+        border-radius: 30vw;
+        flex-direction: column-reverse;
+    }
+
+    #sc3 {
+        border-radius: 30vw;
+    }
+
+    section .img {
+        width: 50vw;
+        height: 50vw;
+    }
+
+    #sc1 .img {
+        border-radius: 25vw;
+    }
+
+    #sc2 .img {
+        border-radius: 25vw;
+    }
+
+    #sc3 .img {
+        border-radius: 25vw;
+    }
+
+    section .caja {
+        width: 80%;
+        padding: 40px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*-----CONTENIDO-----*/
+
+    section {
+        width: 80vw;
+    }
+
+    #sc1 {
+        border-radius: 40vw;
+    }
+
+    #sc2 {
+        border-radius: 40vw;
+    }
+
+    #sc3 {
+        border-radius: 40vw;
+    }
+
+    section .img {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    #sc1 .img {
+        border-radius: 45vw;
+    }
+
+    #sc2 .img {
+        border-radius: 45vw;
+    }
+
+    #sc3 .img {
+        border-radius: 45vw;
+    }
+
+    section .caja .info {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header h1 {
+        font-size: 3.5rem;
+        width: 70%;
+    }
+}

@@ -1,0 +1,58 @@
+/*----------1024----------*/
+
+@media screen and (max-width: 1024px) {
+    header nav {
+        width: 80%;
+    }
+
+    main section {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    main section .infos {
+        width: 80%;
+    }
+
+}
+
+/*----------720----------*/
+
+@media screen and (max-width: 768px) {
+
+    main section {
+        width: 100%;
+    }
+
+    main section .infos {
+        width: 80%;
+    }
+
+    main section .infos > div {
+        display: block;
+    }
+    
+    main section .infos div .inf-box {
+        width: 100%;
+    }
+
+}
+
+/*----------480----------*/
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 3.5rem;
+    }
+
+    main section {
+        width: 95%;
+        margin: 20px 0;
+    }
+
+    main section .infos {
+        width: 90%;
+        
+    }
+
+}

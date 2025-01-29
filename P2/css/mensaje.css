@@ -1,0 +1,61 @@
+:root{
+    --azul: #09801b;
+    --gris: #dedede;
+    --claro: #09801b26;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.caja{
+    width: 40%;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.caja .circulo{
+    background-color: var(--azul);
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    line-height: 18vw;
+}
+.caja .circulo i{
+    font-size: 8rem;
+    color: white;
+}
+.caja .card{
+    background-color: var(--gris);
+    width: 100%;
+    height: 24vw;
+    padding: 20% 15% 0;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+.caja .card a{
+    background-color: var(--azul);
+    padding: 15px 10%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10%;
+}

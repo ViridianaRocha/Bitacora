@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/head-foot.css">
+    <link rel="stylesheet" href="css/bit.css">
+    <link rel="stylesheet" href="css/medias-bit.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Bitácora 1 - Webcita</title>
+
+</head>
+
+<body>
+    <header id="ini">
+        <!-- Menu de hamurguesa  -->
+        <input type="checkbox" id="check">
+        <label for="check" class="chbtn">
+            <i class='bx bx-menu bur'></i>
+        </label>
+
+        <h1>Bitácora 1</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#sec1">Position</a>
+            <a href="#sec2">Especificidad</a>
+            <a href="#sec3">Display</a>
+            <a href="#sec4">Referenciado con CSS</a>
+            <a href="#sec5">Animation</a>
+            <a href="#sec6">JS</a>
+            <a href="#sec7">DOM HTML</a>
+            <a href="#sec8">Propiedad style</a>
+            <a href="#sec9">Eventos</a>
+            <a href="#sec10">classList</a>
+            <a href="#sec11">Viewport</a>
+            <a href="#sec12">Media query</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div class="infos">
+                <h2>Position</h2>
+                <p>
+                    Especifica el tipo de método de posicionamiento utilizado para un elemento. Los elementos se
+                    posicionan usando la propiedad top, bottom, left, right y z-index.
+                    <br>
+                    Hay cinco valores de posición diferentes:
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>static</h3>
+                            <i class='bx bx-chevron-down' id="down1" onclick="vermas(1)"></i>
+                        </div>
+                        <!--<div class="txt-icon">-->
+                        <p id="txt-1">Los elementos HTML se posicionan estáticos de forma predeterminada. No se ven
+                            afectados por
+                            las
+                            propiedades top, bottom left, right y z-index. No está posicionado de ninguna manera
+                            especial;
+                            siempre se posiciona de acuerdo con el flujo normal de la página.</p>
+                        <i class='bx bx-chevron-up' id="up1" onclick="vermenos(1)"></i>
+                        <!--</div>-->
+
+
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>relative</h3>
+                            <i class='bx bx-chevron-down' id="down2" onclick="vermas(2)"></i>
+                        </div>
+
+                        <p id="txt-2">Está posicionado en relación a su posición normal. Desplaza un elemento respecto
+                            de su
+                            posición original establecida mediante el posicionamiento normal. Los demás elementos no
+                            ocuparan el espacio que deja el elemento desplazado. </p>
+                        <i class='bx bx-chevron-up' id="up2" onclick="vermenos(2)"></i>
+
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>absolute</h3>
+                            <i class='bx bx-chevron-down' id="down3" onclick="vermas(3)"></i>
+                        </div>
+
+                        <p id="txt-3">Se emplea para establecer de forma exacta la posición de la que se muestra la caja
+                            de un
+                            elemento. En este caso dependen del posicionamiento del elemento contenedor cuando tiene una
+                            posición diferente a static. Cuando un elemento se posiciona de forma absoluta, el resto de
+                            elementos se ve afectados y modifican su posición. Los demás elementos ocuparan el espacio
+                            que deja el elemento desplazado y es probable que se produzcan solapamientos con otros
+                            elementos. </p>
+                        <i class='bx bx-chevron-up' id="up3" onclick="vermenos(3)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>fixed</h3>
+                            <i class='bx bx-chevron-down' id="down4" onclick="vermas(4)"></i>
+                        </div>
+
+                        <p id="txt-4">Está ubicado en relación con la ventana gráfica, lo que significa que siempre
+                            permanece en el
+                            mismo lugar, incluso si la página se desplaza. No deja un espacio en la página donde
+                            normalmente se ubicaría.</p>
+                        <i class='bx bx-chevron-up' id="up4" onclick="vermenos(4)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>sticky</h3>
+                            <i class='bx bx-chevron-down' id="down5" onclick="vermas(5)"></i>
+                        </div>
+
+                        <p id="txt-5">Se posiciona en función de la posición de desplazamiento del usuario. Alterna
+                            entre relativo
+                            y fijo, dependiendo de la posición de desplazamiento. Se posiciona de forma relativa hasta
+                            que se encuentra una posición de desplazamiento dada en la ventana gráfica, luego se “pega”
+                            en su lugar (como position:fixed;). </p>
+                        <i class='bx bx-chevron-up' id="up5" onclick="vermenos(5)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo">
+
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div class="infos">
+                <h2>Especificidad</h2>
+                <p>
+                    La especificidad es el medio pro el cual los navegadores deciden que valores de propiedad css son
+                    los más relevantes para un elemento y, por lo tanto, se aplicaran.
+                    Cada selector tiene su lugar en la jerarquía de especificidad. Hay cuatro categorías que definen el
+                    nivel de especificidad de un selector:
+                </p>
+                <div class="puntos">
+                    <h3>Estilos en línea</h3>
+                    <h3>ID</h3>
+                    <h3>Clases, atributos y pseudo-clases</h3>
+                    <h3>Elementos y pseudo-elementos</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="infos">
+                <h2>Display</h2>
+                <p>
+                    La propiedad display establece el tipo de caja que genera cada elemento.
+                </p>
+
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>block</h3>
+                            <i class='bx bx-chevron-down' id="down6" onclick="vermas(6)"></i>
+                        </div>
+
+                        <p id="txt-6">Siempre comienza en una nueva línea y ocupa todo el ancho disponible (se extiende
+                            hacia la
+                            izquierda y hacia la derecha tanto como sea posible).</p>
+                        <i class='bx bx-chevron-up' id="up6" onclick="vermenos(6)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>inline</h3>
+                            <i class='bx bx-chevron-down' id="down7" onclick="vermas(7)"></i>
+                        </div>
+
+                        <p id="txt-7">No comienza una nueva línea y solo ocupa el ancho que sea necesario.</p>
+                        <i class='bx bx-chevron-up' id="up7" onclick="vermenos(7)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>inline-block</h3>
+                            <i class='bx bx-chevron-down' id="down8" onclick="vermas(8)"></i>
+                        </div>
+
+                        <p id="txt-8">Permite establecer un alto y un ancho en un elemento. Se respetan los margin y
+                            padding, que con
+                            inline no son respetados. No agrega un salto de línea después del elemento, por lo que puede
+                            alinearse con otros elementos.</p>
+                        <i class='bx bx-chevron-up' id="up8" onclick="vermenos(8)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>none</h3>
+                            <i class='bx bx-chevron-down' id="down9" onclick="vermas(9)"></i>
+                        </div>
+
+                        <p id="txt-9">Hace que el elemento no genere ninguna caja. El resultado es que el elemento
+                            desaparece por
+                            completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar.
+                            Si
+                            se utiliza la propiedad display: none; sobre un elemento, todos sus descendientes también
+                            desaparecen por completo de la página. </p>
+                        <i class='bx bx-chevron-up' id="up9" onclick="vermenos(9)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>table</h3>
+                            <i class='bx bx-chevron-down' id="down10" onclick="vermas(10)"></i>
+                        </div>
+
+                        <p id="txt-10">Permite asignar un comportamiento de tabla a los elementos que haya dentro
+                            (anidados a la
+                            etiqueta donde estás colocando el display: table;).
+                            Dentro de un elemento marcado como display: table; se pueden usar otra serie de valores de
+                            display que corresponden con los roles de distintas etiquetas HTML que usas en las tablas
+                            tradicionales.</p>
+                        <i class='bx bx-chevron-up' id="up10" onclick="vermenos(10)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo">
+
+            </div>
+        </section>
+
+        <section id="sec4">
+            <div class="infos">
+                <h2>Referenciado con CSS</h2>
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Con atributo id</h3>
+                            <i class='bx bx-chevron-down' id="down11" onclick="vermas(11)"></i>
+                        </div>
+
+                        <p id="txt-11">No podemos tener dos elementos que tengan el mismo id. Cuando nos referimos a un
+                            elemento id este se declara con un # en el CSS.</p>
+                        <i class='bx bx-chevron-up' id="up11" onclick="vermenos(11)"></i>
+
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Con el atributo class</h3>
+                            <i class='bx bx-chevron-down' id="down12" onclick="vermas(12)"></i>
+                        </div>
+
+                        <p id="txt-12">Al contrario del id, puede haber varios elementos con la misma class. Este se
+                            declara con un “.” en CSS. </p>
+                        <i class='bx bx-chevron-up' id="up12" onclick="vermenos(12)"></i>
+
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Con pseudo clases</h3>
+                            <i class='bx bx-chevron-down' id="down13" onclick="vermas(13)"></i>
+                        </div>
+
+                        <p id="txt-13">CSS3 también nuevas pseudo clases que hacen la selección aún más específica.</p>
+                        <i class='bx bx-chevron-up' id="up13" onclick="vermenos(13)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Con cualquier atributo</h3>
+                            <i class='bx bx-chevron-down' id="down14" onclick="vermas(14)"></i>
+                        </div>
+
+                        <div id="txt-14" class="list-box">
+                            <p>Aunque los métodos de referencia estudiados anteriormente cubren un variado
+                                espectro de situaciones, a veces no son suficientes para encontrar el elemento exacto.
+                                <br>
+                                La última versión de CSS ha incorporado nuevas formas de referenciar elementos HTML. Una
+                                de
+                                ellas es el . Ahora se puede referenciar un elemento nos solo por los atributos id y
+                                class
+                                sino también a través de cualquier otro atributo.
+                            </p>
+                            <ul>
+                                <li>
+                                    La regla con el selector “^=” será asignada a todo elemento p que contiene un
+                                    atributo id
+                                    con un valor comenzado en “mi” (por ejemplo, “mitexto”, “micasa).</li>
+                                <li>
+                                    La regla con el selector “$=” será asignada a todo elemento p que contiene un
+                                    atributo id
+                                    con un valor finalizado en “mi” (por ejemplo “textomi”, “casami”).</li>
+                                <li>
+                                    La regla con el selector “*=” será asignada a todo elemento p que contiene un
+                                    atributo id
+                                    con un valor que incluye el texto “mi” (en este caso, el texto podría también
+                                    encontrarse en
+                                    medio, como en “textomicasa”).</li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up14" onclick="vermenos(14)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Nuevos selectores</h3>
+                            <i class='bx bx-chevron-down' id="down15" onclick="vermas(15)"></i>
+                        </div>
+
+                        <p id="txt-15">Hay algunos elementos más que fueron agregados o que ahora son considerados parte
+                            de CSS3 y pueden ser útiles para nuestros diseños. Estos selectores usan los símbolos >, + y
+                            –, para especificar la relación entre elementos. </p>
+                        <i class='bx bx-chevron-up' id="up15" onclick="vermenos(15)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec5">
+            <div class="infos">
+                <h2>Animation</h2>
+                <p>
+                    Una animación permite que un elemento cambie gradualmente de un estilo a otro.
+                </p>
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>La regla @keyframes</h3>
+                            <i class='bx bx-chevron-down' id="down16" onclick="vermas(16)"></i>
+                        </div>
+
+                        <p id="txt-16">Cuando especificas estilos CSS dentro de la regla @keyframes, la animación
+                            cambiará gradualmente del
+                            estilo actual al nuevo estilo en ciertos momentos. Para que una animación funcione, debe
+                            vincular la
+                            animación a un elemento.</p>
+                        <i class='bx bx-chevron-up' id="up16" onclick="vermenos(16)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-duration</h3>
+                            <i class='bx bx-chevron-down' id="down17" onclick="vermas(17)"></i>
+                        </div>
+
+                        <p id="txt-17">Especifica cuanto tiempo debe transcurrir una animación para completar un ciclo.
+                            Si no se especifica la propiedad de duración de la animación, no se producirá ninguna
+                            animación, ya que el valor predeterminado es 0 segundos.
+                            También, se puede especificar cuando cambiara usando “to(0%inicio)” y “form(100%final)”.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up17" onclick="vermenos(17)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-timing-function</h3>
+                            <i class='bx bx-chevron-down' id="down18" onclick="vermas(18)"></i>
+                        </div>
+
+                        <div id="txt-18" class="list-box">
+                            <p>Especifica la curva de velocidad de la animación.</p>
+                            <ul>
+                                <li>
+                                    Linear: especifica una animación con la misma velocidad de principio a fin.
+                                </li>
+                                <li>
+                                    Ease: especifica una animación con un inicio lento, luego rápido y luego termina
+                                    lentamente
+                                    (esto es por defecto).
+                                </li>
+                                <li>
+                                    Ease-in: especifica una animación con un inicio lento.
+                                </li>
+                                <li>
+                                    Ease-out: especifica una animación con un final lento.
+                                </li>
+                                <li>
+                                    Ease-in-out: especifica una animación con un inicio y un final lentos.
+                                </li>
+                                <li>
+                                    Cubic- bezer(n,n,n,n): permite definir sus propios valores en una función
+                                    cubic-bezier.
+                                    Requiere valores numéricos de 0 a 1.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up18" onclick="vermenos(18)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-direction</h3>
+                            <i class='bx bx-chevron-down' id="down19" onclick="vermas(19)"></i>
+                        </div>
+
+                        <div id="txt-19" class="list-box">
+                            <p>Especifica si una animación debe reproducirse hacia adelante, hacia atrás o en
+                                ciclos alternos.</p>
+                            <ul>
+                                <li>
+                                    Normal: la animación se reproduce de forma normal (hacia delante). Esto es
+                                    predeterminado.
+                                </li>
+                                <li>
+                                    Reverse: la animación se reproduce en dirección inversa (hacia atrás).
+                                </li>
+                                <li>
+                                    Alternate: la animación se reproduce hacia delante primero, luego hacia atrás.
+                                </li>
+                                <li>
+                                    Alternate-reverse: la animación se reproduce hacia atrás primero, luego hacia atrás.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up19" onclick="vermenos(19)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-iteration-count</h3>
+                            <i class='bx bx-chevron-down' id="down20" onclick="vermas(20)"></i>
+                        </div>
+
+                        <p id="txt-20">Especifica el número de veces que se debe reproducir una animación. Se expresa
+                            con números cerrados y se puede usar también infinito.</p>
+                        <i class='bx bx-chevron-up' id="up20" onclick="vermenos(20)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-delay</h3>
+                            <i class='bx bx-chevron-down' id="down21" onclick="vermas(21)"></i>
+                        </div>
+
+                        <p id="txt-21">Especifica un retraso para el inicio de una animación. Se expresa en segundos. Se
+                            pueden utilizar unidades negativas.</p>
+                        <i class='bx bx-chevron-up' id="up21" onclick="vermenos(21)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Animation-play-state</h3>
+                            <i class='bx bx-chevron-down' id="down22" onclick="vermas(22)"></i>
+                        </div>
+
+                        <p id="txt-22">Especifica si la animación se está ejecutando (running) o está en pausa (paused).
+                        </p>
+                        <i class='bx bx-chevron-up' id="up22" onclick="vermenos(22)"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo">
+
+            </div>
+        </section>
+
+        <section id="sec6">
+            <div class="infos">
+                <h2>Conceptos básicos de JS</h2>
+                <p>
+                    JS es un lenguaje de programación orientado a objetos, dialecto del estándar ECMAScript.
+                    Fue desarrollado originalmente por Brendan Eich de Neetscape con el nombre de Mocha, posteriormente
+                    se le nombro LiveScript, y finalmente JavaScript.
+                    JavaScript se diseño con una sintaxis similar a C, aunque adopta nombres y convenciones del lenguaje
+                    de programación JAVA.
+                    Se utiliza principalmente en su forma del lado del cliente implementado como parte de un navegador
+                    web permitiendo mejoras en la interfaz de usuario y páginas web dinámicas, aunque existe una forma
+                    de Java Script del lado del servidor.
+                    Hay dos formas de incluir JavaScript en HTML y hacer que funcionen juntos.
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Agregar JS directamente a un archivo HTML.</h3>
+                            <i class='bx bx-chevron-down' id="down23" onclick="vermas(23)"></i>
+                        </div>
+
+                        <div id="txt-23" class="list-box">
+                            <ul>
+                                <li>
+                                    Para insertar JS de forma directa en HTML, se utiliza la etiqueta script el código
+                                    JS
+                                    debe quedar dentro de esta etiqueta.
+                                </li>
+                                <li>
+                                    El codigo JS se debe colocar dentro de: la etiqueta head o body.
+                                </li>
+                                <li>
+                                    Dependiendo de donde se agregue el código JS en el archivo HTML, la carga será
+                                    diferente. Por lo general se recomienda agregarlo en el head para que permanezca
+                                    separado del contenido HTML.
+                                </li>
+                                <li>
+                                    Para colocarlo dentro de body puede ayudar a mejorar la velocidad de carga, ya que
+                                    el
+                                    contenido del sitio web se cargará más rápido, y solo después de eso se procesará el
+                                    JavaScript.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up23" onclick="vermenos(23)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Agregar código JS en un archivo separado.</h3>
+                            <i class='bx bx-chevron-down' id="down24" onclick="vermas(24)"></i>
+                        </div>
+
+                        <div id="txt-24" class="list-box">
+                            <ul>
+                                <li>Insertar JS en HTML directamente no siempre es la mejor opción. Sobre todo, si
+                                    algunos
+                                    scripts deben utilizarse en varias páginas, por lo tanto, es mejor mantener el
+                                    código JS
+                                    en archivos separados y hacer referencia a estos archivos de la misma forma en que
+                                    se
+                                    hace referencia a los documentos CSS.</li>
+                                <li>
+                                    Cuando los códigos HTML y JS están separados, se cumple el principio de diseño de
+                                    separación y hace que todo sea mucho más sostenible y reutilizable.
+                                </li>
+                                <li>
+                                    La legibilidad y el mantenimiento del código es mucho más fácil.
+                                </li>
+                                <li>
+                                    Los archivos JS en cache mejoran el rendimiento general del sitio web al disminuir
+                                    el
+                                    tiempo que tardan las páginas en cargarse.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up24" onclick="vermenos(24)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Método getElementById()</h3>
+                            <i class='bx bx-chevron-down' id="down25" onclick="vermas(25)"></i>
+                        </div>
+
+                        <div id="txt-25" class="list-box">
+                            <ul>
+                                <li>
+                                    El método devuelve el elemento que tiene el atributo ID con el valor especifico.
+                                </li>
+                                <li>
+                                    Este método es uno de los métodos más comunes en el DOM de HTML y se usa casi cada
+                                    vez
+                                    que desea manipular u obtener información de un elemento de su documento.
+                                </li>
+                                <li>
+                                    Devuelve nulo si no existe.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up25" onclick="vermenos(25)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Variables</h3>
+                            <i class='bx bx-chevron-down' id="down26" onclick="vermas(26)"></i>
+                        </div>
+
+                        <div id="txt-26" class="list-box">
+                            <ul>
+                                <li>Operadores aritméticos</li>
+                                <li>Funciones</li>
+                                <li>Tipos de datos principales</li>
+                                <li>String</li>
+                                <li>Numérico</li>
+                                <li>Booleano</li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up26" onclick="vermenos(26)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec7">
+            <div class="infos">
+                <h2>DOM HTML</h2>
+                <p>
+                    El modelo de objetos de documento (DOM) del W3C es una plataforma y una interfaz de lenguaje neutral
+                    que permite que los programas y los scripts accedan y actualicen dinámicamente el contenido, la
+                    estructura y estilo de un documento.
+                    Cuando se carga una página web, el navegador crea un Modelo de objeto de documento de la página.
+                    Con el dom, los programadores pueden construir documentos, navegar por su estructura, y añadir,
+                    modificar, o eliminar elementos y contenido.
+                    El HTML DOM es un modelo de objetos estándar y una interfaz de programación para HTML que define:
+                </p>
+                <ul>
+                    <li>Los elementos HTML como objetos.</li>
+                    <li>Las propiedades de todos los elementos HTML.</li>
+                    <li>Los métodos para acceder a todos los elementos HTML.</li>
+                    <li>Los eventos para todos los elementos HTML.</li>
+                </ul>
+                <p>DOM significa Document Object Model, en español seria Modelo de objetos del documento.
+                    <br>
+                    El DOM es una interfaz que implementan los navegadores para poder interactuar con los elementos del
+                    HTML.
+                </p>
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Conversión</h3>
+                            <i class='bx bx-chevron-down' id="down33" onclick="vermas(33)"></i>
+                        </div>
+
+                        <p id="txt-33">
+                            El navegador lee los bytes sin procesar del HTML del disco de la red y los traduce en
+                            caracteres individuales según la codificación específica del archivo.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up33" onclick="vermenos(33)"></i>
+                    </div>
+
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Conversión en tokens</h3>
+                            <i class='bx bx-chevron-down' id="down34" onclick="vermas(34)"></i>
+                        </div>
+
+                        <p id="txt-34">
+                            el navegador convierte cadenas de caracteres en tokens diferentes – especificados por el
+                            estándar W3C y HTML 5; por ejemplo, “html”,
+                            body” – y otras cadenas entre paréntesis angulares. Cada token tiene un significado
+                            especial y un conjunto de reglas propio.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up34" onclick="vermenos(34)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Lexicalización</h3>
+                            <i class='bx bx-chevron-down' id="down35" onclick="vermas(35)"></i>
+                        </div>
+
+                        <p id="txt-35">
+                            Los tokens emitidos se convierten en “objetos” que definen sus propiedades y reglas.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up35" onclick="vermenos(35)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>Construcción del DOM</h3>
+                            <i class='bx bx-chevron-down' id="down36" onclick="vermas(36)"></i>
+                        </div>
+
+                        <p id="txt-36">
+                            Por último, los objetos creados se vinculan en una estructura de datos en forma de árbol que
+                            muestra las relaciones entre objetos primarios y secundarios definidas en el HTML original.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up36" onclick="vermenos(36)"></i>
+                    </div>
+                </div>
+                <p>Para poder manipular los elementos HTML con JS primero debemos encontrarlos.
+                    Esto lo podemos hacer de varias formas:
+                </p>
+                <div class="puntos">
+                    <h3>Por su ID</h3>
+                    <h3>Por su nombre de clase.</h3>
+                    <h3>Por su nombre de etiqueta.</h3>
+                    <h3>Por su selector CSS.</h3>
+                </div>
+
+            </div>
+
+            <img class="photo" src="" alt="">
+
+        </section>
+
+        <section id="sec8">
+            <div class="infos">
+                <h2>Propiedad Style</h2>
+                <p>
+                    En js podemos utilizar la propiedad style para manipular el estilo de un elemento html, o para crear
+                    uno de nuevo.
+                    <br>
+                    Para cambiar el estilo de un elemento HTML se debe usar la siguiente sintaxis:
+                    Document.getElementById(“idname”) .style.propiedad=”valor o nuevo valor”;
+                    El estilo de css puede ser cambiado mediante un evento o función.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="sec9">
+            <div class="infos">
+                <h2>Eventos</h2>
+                <p>
+                    El HTML DOM le permite ejecutar código cuando ocurre un evento.
+                    El navegador genera eventos cuando “suceden cosas” a elementos HTML como, por ejemplo:
+                </p>
+                <ul>
+                    <li>
+                        Al hacer click con el mouse – onclick
+                    </li>
+                    <li>
+                        Al hacer doble click con el mouse – ondbclick
+                    </li>
+                    <li>
+                        Al colocar el mouse sobre un elemento – onmouseover.
+                    </li>
+                    <li>
+                        Al alejar el mouse de un elemento – onmouseout.
+                    </li>
+                    <li>
+                        Cuando una página web se ha cargado – onkeydown.
+                    </li>
+                    <li>
+                        Al hacer scroll en la página – onscroll.
+                    </li>
+                </ul>
+
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>addEventListener()</h3>
+                            <i class='bx bx-chevron-down' id="down27" onclick="vermas(27)"></i>
+                        </div>
+
+                        <p id="txt-27">
+                            Adjunta un controlador de eventos al elemento especificado.
+                            La sintaxis para este método es la siguiente:
+                            <br>
+                            <span>Elemento.addEventListener (evento, funcion)</span>
+                            <br>
+                            Este método no es soportado en IE8.
+                            Para hacer referencia al evento en estos métodos no se usa el prefijo “on” por ejemplo usa
+                            click en lugar de onclick.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up27" onclick="vermenos(27)"></i>
+
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>removeEventListener()</h3>
+                            <i class='bx bx-chevron-down' id="down28" onclick="vermas(28)"></i>
+                        </div>
+
+                        <p id="txt-28">
+                            El método removeEventListener() elimina un controlador de eventos que se ha adjuntado con el
+                            método addEventListener().
+                            Para eliminar controladores de eventos, la función especificada con el método
+                            addEventListener() debe ser una función externa.
+                            El elemento fieldst tiene un evento onmousemove que muestra un numero aleatorio cuando se
+                            usa el mouse.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up28" onclick="vermenos(28)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec10">
+            <div class="infos">
+                <h2>classList</h2>
+                <p>
+                    La propiedad classList devuelve los nombres de clase de un elemento.
+                    Esta propiedad es útil para agregar, eliminar y alternar clases CSS en un elemento.
+                    La propiedad classList es de solo lectura, sin embargo, puede modificarla utilizando los métodos
+                    add(), remove() y toggle().
+                    No es soportada en IE9 y versiones anteriores.
+                </p>
+                <div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>classList.add()</h3>
+                            <i class='bx bx-chevron-down' id="down29" onclick="vermas(29)"></i>
+                        </div>
+
+                        <p id="txt-29">
+                            Agrega uno o más nombres de clase a un elemento. Si la clase especificada ya existe, la
+                            clase no se agregará.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up29" onclick="vermenos(29)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>classList.remove()</h3>
+                            <i class='bx bx-chevron-down' id="down30" onclick="vermas(30)"></i>
+                        </div>
+
+                        <p id="txt-30">
+                            La propiedad classList más el método remove elimina uno o más nombres de clase de un
+                            elemento. Eliminar una clase que no existe, NO arroja un error.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up30" onclick="vermenos(30)"></i>
+                    </div>
+                    <div class="inf-box">
+
+                        <div class="sub-icon">
+                            <h3>classList.toggle()</h3>
+                            <i class='bx bx-chevron-down' id="down31" onclick="vermas(31)"></i>
+                        </div>
+
+                        <p id="txt-31">
+                            La propiedad classList más el método toggle alterna entre un nombre de clase para un
+                            elemento. El primer parámetro elimina la clase especificada de un elemento y devuelve falso.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up31" onclick="vermenos(31)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec11">
+            <div class="infos">
+                <h2>Viewport</h2>
+                <p>
+                    El viewport o Ventana grafica es el área visible del usuario de una página web.
+                    Varía según el dispositivo y será mas pequeña en un smartphone que en la comentadora.
+                    HTML5 introdujo un método para permitir que los diseñadores web tomen el control de la ventana
+                    gráfica, a través de la etiqueta meta.
+                    Un elemento de vista meta le da al navegador instrucciones sobre cómo controlar.
+                    La parte width = device-width establece el ancho de la pagina para seguir el ancho de pantalla del
+                    dispositivo (que variara dependiendo del dispositivo).
+                    La parte de la escala inicial = 1.0 establece el nivel de zoom inicial cuando el navegador carga la
+                    página por primera vez.
+                </p>
+            </div>
+
+            <div class="photo">
+
+            </div>
+        </section>
+
+        <section id="sec12">
+            <div class="infos">
+                <h2>Media Query</h2>
+                <p>
+                    Los media Quieries son un módulo de css3 que adapta la representación del contenido a las
+                    características de un dispositivo.
+                    Se convirtió en un estándar recomendado por la w3c en junio de 2012 y es un principio básico del
+                    diseño web adaptativo.
+                </p>
+
+                <div>
+                    <div class="inf-box ultimo">
+
+                        <div class="sub-icon">
+                            <h3>@media</h3>
+                            <i class='bx bx-chevron-down' id="down32" onclick="vermas(32)"></i>
+                        </div>
+
+                        <p id="txt-32">La regla @media hizo posible definir diferentes reglas de estilo para
+                            diferentes tipos de medios.
+                            Se podían definir reglas de estilo para computadoras, impresoras, dispositivos de mano,
+                            televisiones, etc.
+                            Desafortunadamente, estos tipos de medios nunca recibieron mucho soporte por parte de los
+                            dispositivos, aparte del tipo de medios de impresión.
+                            CSS3 introdujo medias que extendieron la idea de los tipos de media css2: en lugar de buscar
+                            un tipo de dispositivo, analizan la capacidad del dispositivo.
+                            Las medias se pueden utilizar para verificar muchas cosas, como: ancho y alto de la ventana
+                            gráfica, ancho y alto del dispositivo, orientación del dispositivo (horizontal o vertical) y
+                            la resolución.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up32" onclick="vermenos(32)"></i>
+                    </div>
+
+                </div>
+            </div>
+            <div class="photo">
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+<script>
+    function vermas(numP) {
+
+        var masTexto = document.getElementById("txt-" + numP);
+        var menos = document.getElementById("up" + numP);
+        var mas = document.getElementById("down" + numP);
+
+        masTexto.style.display = "block";
+        menos.style.display = "block";
+        mas.style.display = "none";
+    }
+
+    function vermenos(numP) {
+
+        var menosTexto = document.getElementById("txt-" + numP);
+        var more = document.getElementById("down" + numP);
+        var less = document.getElementById("up" + numP);
+
+        menosTexto.style.display = "none";
+        less.style.display = "none";
+        more.style.display = "block";
+    }
+
+
+</script>
+
+</html>

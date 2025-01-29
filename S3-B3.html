@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="css/head-foot.css">
+    <link rel="stylesheet" href="css/bit.css">
+    <link rel="stylesheet" href="css/medias-bit.css">
+    <link rel="stylesheet" href="css/medias-svg.css">
+    <link rel="stylesheet" href="css/burger.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Bitácora 3 - Webcita</title>
+
+    <style>
+        header nav {
+            justify-content: space-evenly;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header id="ini">
+        <!-- Menu de hamurguesa  -->
+        <input type="checkbox" id="check">
+        <label for="check" class="chbtn">
+            <i class='bx bx-menu bur'></i>
+        </label>
+
+        <h1>Bitácora 3</h1>
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#sec1">Look & Feel</a>
+            <a href="#sec2">Forms</a>
+            <a href="#sec3">Frameworks</a>
+            <a href="#sec4">Direccion de arte</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sec1">
+            <div class="infos">
+                <h2>Look & Feel</h2>
+                <p>
+                    Look & feel es una expresión inglesa que puede tener diferentes significados dependiendo del
+                    contexto en que se utilice.
+                    Significa textualmente el “aspecto y tacto” de determinados productos.
+                    En contexto de desarrollo, el significado más apropiado sería ”aspecto y comportamiento”.
+                    <br>
+                    El aspecto y comportamiento de una GUI es el conjunto de propiedades y características que le dan
+                    una identidad visual única y pueden ser percibidos de manera diferente de acuerdo con cada usuario.
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Look</h3>
+                            <i class='bx bx-chevron-down' id="down1" onclick="vermas(1)"></i>
+                        </div>
+                        <div id="txt-1" class="list-box">
+                            <p>El aspecto o look de las interfaces se define por los siguientes componentes:</p>
+                            <ul>
+                                <li>
+                                    Paleta de colores
+                                </li>
+                                <li>
+                                    Imágenes
+                                </li>
+                                <li>
+                                    Diseño
+                                </li>
+                                <li>
+                                    Opciones de fuente
+                                </li>
+                                <li>
+                                    Estilo general
+                                </li>
+                                <li>
+                                    Disposición de los elementos
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up1" onclick="vermenos(1)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Feel</h3>
+                            <i class='bx bx-chevron-down' id="down2" onclick="vermas(2)"></i>
+                        </div>
+                        <div id="txt-2" class="list-box">
+                            <p>El comportamiento de las interfaces esta influido por la interacción, que se determina
+                                por las siguientes características.</p>
+                            <ul>
+                                <li>
+                                    El movimiento y la respuesta de los componentes dinámicos, como menús desplegables,
+                                    botones, formas y galerías.
+                                </li>
+                                <li>
+                                    Los efectos de sonido.
+                                </li>
+                                <li>
+                                    La rapidez con que las páginas y las imágenes se cargan.
+                                </li>
+                            </ul>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up2" onclick="vermenos(2)"></i>
+                    </div>
+                    <!---->
+                </div>
+                <p>
+                    El aspecto y el comportamiento de un proyecto web son dos cuestiones fundamentales.
+                    Es importante realizar un análisis previo para establecer que queremos reflejar, ya que al instante
+                    muestra una actitud a tus clientes antes de empezar a leer el contenido en el sitio.
+                    El look and feel de un proyecto web también se puede describir como su personalidad. La cual debe
+                    coincidir con la actitud la empresa y sus objetivos sin dejar de encajar en las expectativas del
+                    usuario.
+                </p>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div class="infos">
+                <h2>Forms</h2>
+                <p>
+                    Un formulario web es un elemento del sitio web en el que los usuarios de internet pueden dejar sus
+                    datos o información, enviarla a un servidos para su procesamiento a cambio de recibir algo.
+                </p>
+
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="infos">
+                <h2>Frameworks</h2>
+                <p>
+                    Un framework es un conjunto de reglas y convenciones que se usan para desarrollar software de manera
+                    más eficiente y rápida. Estos marcos de trabajo se emplean para ahorrar tiempo y esfuerzo en el
+                    desarrollo de aplicaciones, ya que proporcionan una estructura básica que se puede utilizar como
+                    punto de partida.
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Bootstrap</h3>
+                            <i class='bx bx-chevron-down' id="down3" onclick="vermas(3)"></i>
+                        </div>
+                        <div id="txt-3" class="list-box">
+                            <p>Es un framework de código abierto desarrollado por Mark Otto y Jacob Thornton en 2011. Se
+                                creó originalmente como una solución interna para twitter y se ha convertido en una
+                                herramienta esencial para el desarrollo web.</p>
+                            <h4>Ventajas</h4>
+                            <ul>
+                                <li>
+                                    Desarrollo rápido
+                                </li>
+                                <li>
+                                    Adaptabilidad
+                                </li>
+                                <li>
+                                    Coherencia
+                                </li>
+                                <li>
+                                    Compatibilidad
+                                </li>
+                                <li>
+                                    Comundad activa
+                                </li>
+                                <li>
+                                    Personalización
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/Bootstrap.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up3" onclick="vermenos(3)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Fundation</h3>
+                            <i class='bx bx-chevron-down' id="down4" onclick="vermas(4)"></i>
+                        </div>
+                        <div id="txt-4" class="list-box">
+                            <p>Es un framework de interfaz de usuario responsivo.
+                                Foundation proporciona una cuadrícula responsive e incluye componentes de interfaz de
+                                usuario html y css, etc,
+                            </p>
+                            <h4>Beneficios</h4>
+                            <ul>
+                                <li>
+                                    La actualización de Foundation 5 a la versión 6.0 redujo al mínimo el tamaño de
+                                    archivo
+                                    del framework. Con 60 KB para CSS y 84 KB para JavaScript.
+                                </li>
+                                <li>
+                                    Debido a su estructura modular y a la libertad en la selección, es posible reducir
+                                    el
+                                    tamaño de este entorno de trabajo aún más.
+                                </li>
+                                <li>
+                                    La combinación del grid flexible con los diversos atributos ARIA implementados por
+                                    ZURB,
+                                    proporciona las opciones básicas para proyectos web multiplataforma y
+                                    multidispositivo.
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/foundation.svg" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up4" onclick="vermenos(4)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Material Design</h3>
+                            <i class='bx bx-chevron-down' id="down5" onclick="vermas(5)"></i>
+                        </div>
+                        <div id="txt-5" class="list-box">
+                            <p>Un sistema de diseño de web y de software desarrollado por google. Ofrece Documentación
+                                sobre la funcionalidad y uso sugerido de los elementos, estandarización, recursos de
+                                aprendizaje y soporte para nuevas funcionalidades en el futuro.
+                            </p>
+                            <h4>Beneficios</h4>
+                            <p>Memorabilidad y asociabilidad del lenguaje gráfico de google, recursos
+                                disponibles, soporte para android, flutter y web, simplificación del estilizado del
+                                software, etc.</p>
+                            <h4>Soporte</h4>
+                            <p>MD es un sistema de diseño que tiene constantemente saca recibe implementaciones. El
+                                equipo de desarrollo a cargo del proyecto ha publicado un roadmap que enlista todo en lo
+                                que están trabajando.</p>
+                            <h4>Simplicidad</h4>
+                            <p>Como cualquier otro framework, Material Design simplifica la tediosa tarea de estilizar
+                                software bajo un sistema previamente diseñado por expertos, lo que brinda un nivel extra
+                                de calidad a nuestros proyectos.</p>
+                            <img class="photo" src="img/MaterialDesign.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up5" onclick="vermenos(5)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Bulma</h3>
+                            <i class='bx bx-chevron-down' id="down6" onclick="vermas(6)"></i>
+                        </div>
+                        <div id="txt-6" class="list-box">
+                            <p>Bulma es un framework CSS basado en Flexbox que está compuesto solamente de clases CSS
+                                por lo cual el código HTML no tendrá ningún efecto sobre el estilo de la página.
+                                Bulma está enfocado en la filosofía de mobile-first por lo cual es responsivo y muy
+                                fácil de usar.
+                                Fue creado por Jeremy Thomas en el 2016.
+                            </p>
+                            <h4>Diseño responsivo</h4>
+                            <p>Bulma esta optimizado para un diseño responsivo. La mayoría de los elementos se
+                                acomodarán vertical mente y el nav desaparecerá automáticamente.</p>
+                            <img class="photo" src="img/bulma-banner.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up6" onclick="vermenos(6)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Milligram</h3>
+                            <i class='bx bx-chevron-down' id="down7" onclick="vermas(7)"></i>
+                        </div>
+                        <div id="txt-7" class="list-box">
+                            <p>Es un framework CSS pequeño (2kb) pero poderoso que ofrece estlos para un
+                                desarrollo web eficiente.
+                                Está calificado entre los tres mejores frameworks CSS. Su objetivo principal es ofrecer
+                                n
+                                conjunto de esilos y componentes básicos que faciliten la creación de sitios we limpios
+                                y
+                                atractivos sin agregar una gran cantidad de código innecesario.
+                            </p>
+                            <h4>Ventajas</h4>
+                            <ul>
+                                <li>
+                                    Pesa 2kb
+                                </li>
+                                <li>
+                                    Diseño minimalista
+                                </li>
+                                <li>
+                                    Incluye Flexbox grid
+                                </li>
+                                <li>
+                                    Fácil de aprender
+                                </li>
+                            </ul>
+                            <h4>Desventajas</h4>
+                            <ul>
+                                <li>
+                                    Falta de presonalización
+                                </li>
+                                <li>
+                                    Poco conocido
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/Milligram.png" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up7" onclick="vermenos(7)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Tailwind</h3>
+                            <i class='bx bx-chevron-down' id="down8" onclick="vermas(8)"></i>
+                        </div>
+                        <div id="txt-8" class="list-box">
+                            <p>Tailwind es un framework CSS que permite un desarrollo ágil, basado en clases de utilidad
+                                que se pueden aplicar facilmente al HTML y unos flujos de desarrollo que permiten
+                                optimizar el peso del CSS.
+                            </p>
+                            <h4>Funcionamiento</h4>
+                            <p>Funciona escaneando todos sus archivos HTML, componentes JavaScript y cualquier otra
+                                plantilla en busca de nombres de clases, generando los estilos correspondientes y luego
+                                escribiéndolos en un archivo CSS estático.
+                                Es rápido, flexible y confiable, sin tiempo de ejecución.</p>
+                            <h4>Ventajas</h4>
+                            <ul>
+                                <li>
+                                    Proceso de desarrollo más rápido.
+                                </li>
+                                <li>
+                                    Te ayuda a practicar CSS ya que las utilidades son similares.
+                                </li>
+                                <li>
+                                    Todas las utilidades y componentes son personalizables.
+                                </li>
+                                <li>
+                                    El tamaño total del archivo para la producción suele ser pequeño.
+                                </li>
+                                <li>
+                                    Puedes usar todas las clases de Tailwind dentro de un archivo css a través de “@apply”
+                                </li>
+                            </ul>
+                            <img class="photo" src="img/Tailwind.PNG" alt="">
+                        </div>
+                        <i class='bx bx-chevron-up' id="up8" onclick="vermenos(8)"></i>
+                    </div>
+                    <!---->
+                </div>
+
+                <!--<h4>Ventajas</h4>
+                <div class="ventajas">
+                    <div class="ven">
+                        <h3>Crear y editar cualquier editor de texto</h3>
+                        <h3>Imprimir con alta calidad en cualquier resolución </h3>
+                        <h3>Soporte del navegador</h3>
+                    </div>
+                    <img class="photo-svg" src="img/Fresas.svg" alt="">
+                    <div class="ven">
+                        <h3>Las imágenes SVG son escalables</h3>
+                        <h3>SVG es un estándar abierto</h3>
+                        <h3>Los gráficos SVG NO pierden calidad si amplían o cambian de tamaño</h3>
+                    </div>
+                </div>-->
+            </div>
+        </section>
+
+        <!---->
+
+        <section id="sec4">
+            <div class="infos">
+                <h2>Dirección de arte</h2>
+                <p>
+                    Hoy en día, al visitante de un proyecto web se le seduce mediante la estética y el mensaje humano y
+                    emocional. Conseguir o no los objetivos de la empresa depende del arte que se le imprima al diseño
+                    del
+                    proyecto web.
+                    <br>
+                    La dirección de arte, no es solo para el cine, anuncios o escenografías. Los soportes digitales,
+                    como la web, también necesitan de esa chispa de autenticidad.
+                </p>
+                <div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Paso 1. Coaching creativo estratégico</h3>
+                            <i class='bx bx-chevron-down' id="down9" onclick="vermas(9)"></i>
+                        </div>
+                        <p id="txt-9">La dirección de arte web se trabaja a partir del documento estratégico de la marca
+                            o Brand Book.
+                            Este documento recoge información relativa a la propuesta de valor junto con la estrategia
+                            general del negocio.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up9" onclick="vermenos(9)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Paso 2. Definición de un modelo visual</h3>
+                            <i class='bx bx-chevron-down' id="down10" onclick="vermas(10)"></i>
+                        </div>
+                        <div id="txt-10" class="list-box">
+                            <p>Con toda la información recabada de la empresa, se puede definir un modelo o tendencia
+                                visual hacia donde ira el diseño web.
+                                En esta fase también se plantean las fortalezas y debilidades de la nueva imagen, así
+                                como planteamiento de soluciones.
+                            </p>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up10" onclick="vermenos(10)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Paso 3. Proceso creativo</h3>
+                            <i class='bx bx-chevron-down' id="down11" onclick="vermas(11)"></i>
+                        </div>
+                        <p id="txt-11">Este paso incluye la elaboración de todo el material gráfico del proyecto web.
+                            Se trata de crear un sistema de marca adecuado formado por imágenes, iconografía, gama
+                            cromática diseño vectorial.
+                            Los mejores proyectos web ofrecen mas riqueza visual, porque seduce mas al usuario y
+                            demuestra una apuesta fuerte por la marca y sus valores.
+                        </p>
+                        <i class='bx bx-chevron-up' id="up11" onclick="vermenos(11)"></i>
+                    </div>
+                    <div class="inf-box">
+                        <div class="sub-icon">
+                            <h3>Paso 4. La producción de la web</h3>
+                            <i class='bx bx-chevron-down' id="down12" onclick="vermas(12)"></i>
+                        </div>
+                        <div id="txt-12" class="list-box">
+                            <p>En esta fase ponemos ya a la práctica toda la creación que tenemos en borrador para
+                                acabarla y presentarla.</p>
+                        </div>
+                        <i class='bx bx-chevron-up' id="up12" onclick="vermenos(12)"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    function vermas(numP) {
+
+        var masTexto = document.getElementById("txt-" + numP);
+        var menos = document.getElementById("up" + numP);
+        var mas = document.getElementById("down" + numP);
+
+        masTexto.style.display = "block";
+        menos.style.display = "block";
+        mas.style.display = "none";
+    }
+
+    function vermenos(numP) {
+
+        var menosTexto = document.getElementById("txt-" + numP);
+        var more = document.getElementById("down" + numP);
+        var less = document.getElementById("up" + numP);
+
+        menosTexto.style.display = "none";
+        less.style.display = "none";
+        more.style.display = "block";
+    }
+</script>
+
+</html>

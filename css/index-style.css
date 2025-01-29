@@ -1,0 +1,86 @@
+/*-----CONTENIDO-----*/
+
+section {
+    width: 90%;
+    height: auto;
+    margin-bottom: 50px;
+    background-color: #F4DBDB;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+section .img a :nth-child(2){
+    display: none;
+}
+
+#sc1 {
+    border-radius: 0 200px 200px 0;
+}
+
+#sc2 {
+    border-radius: 200px 0 0 200px;
+    right: -10%;
+}
+
+#sc3 {
+    border-radius: 0 200px 200px 0;
+}
+
+section .img {
+    overflow: hidden;
+    background-color: #AEC289;
+    width: 50%;
+    height: 350px;
+}
+
+#sc1 .img {
+    border-radius: 0 200px 200px 0;
+}
+
+#sc2 .img {
+    border-radius: 200px 0 0 200px;
+}
+
+#sc3 .img {
+    border-radius: 0 200px 200px 0;
+}
+
+section .caja {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+section .caja .info {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+section .caja .info h2 {
+    font-size: 2.2rem;
+    color: #CD4662;
+}
+
+section .caja .info p {
+    margin: 25px 0;
+    color: #b4344e;
+    font-size: 1rem;
+}
+
+section .caja .info a {
+    width: 100px;
+    height: 30px;
+    background-color: #CD4662;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #F4DBDB;
+    line-height: 30px;
+    font-size: 1.3;
+}
