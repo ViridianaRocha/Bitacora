@@ -28,6 +28,11 @@ section .img a :nth-child(2){
     border-radius: 0 200px 200px 0;
 }
 
+#sc4 {
+    border-radius: 200px 0 0 200px;
+    right: -10%;
+}
+
 section .img {
     overflow: hidden;
     background-color: #AEC289;
@@ -45,6 +50,10 @@ section .img {
 
 #sc3 .img {
     border-radius: 0 200px 200px 0;
+}
+
+#sc4 .img {
+    border-radius: 200px 0 0 200px;
 }
 
 section .caja {
